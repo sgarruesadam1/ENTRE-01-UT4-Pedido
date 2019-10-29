@@ -2,6 +2,8 @@
 
 /**
  *  Representa a un cliente que hace un pedido 
+ *  
+ *  Sergio Garrués Aizcorbe
  */
 public class Cliente
 {
@@ -52,7 +54,12 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
-         
+        String strNombre = "NOMBRE:";
+        String strDir = "DIRECCIÓN:";
+        String strCiudad= "CIUDAD:";
+        String strProv = "PROVINCIA:";
+        String stringCliente = String.format("%10s %-10s \n%10s %-10s \n%10s %-10s \n%10s %-10s",strNombre, nombre, strDir, direccion, strCiudad, ciudad, strProv, provincia); 
+        return stringCliente;
           
     }
     
